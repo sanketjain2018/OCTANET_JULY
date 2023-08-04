@@ -1,94 +1,193 @@
-.{
-    margin: 0px;
-    padding:0px;
-    box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+
 }
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),
-    url("img/background.jpg");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    font-family: sans-serif;
-}
-nav{
-    height: 100px;
-    width: 100%;
+/* slider css */
+.content {
+    /* width: 100%; */
+    height: 320px;
+    background: #fff;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    color: chartreuse;
+    justify-content: center;
+    margin-top: 0%;
 }
 
-.logo a{
-    font-size: 1em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    color:white;
+.swiper {
+    /* width: 80%; */
+    height: fit-content;
+    margin-top: 5px;
 }
 
-.logo a img{
-    width: 20%;
-    height: 20%;
-    margin-left: 13px;
+.swiper-slide img {
+    width: 99%;
+    margin-top: 0%;
+    margin-left: 11px;
+
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: #fff;
+}
+.swiper-wrapper{
+    margin-top: 0px;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+/* main css */
+.fnav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 6px;
+    color: #fff;
+    background-color: rgb(50, 50, 69);
+    width: 100%;
+    height: 6%;
+}
+
+.fnav .left{
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.left img{
+    width: 22%;
+    cursor: pointer;
+}
+
+.left input{
+    margin-inline: 11px;
+    width: 420px;
+    height: 33px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 6px;
+    border-radius: 3px;
+}
+
+.fnav .right{
+    display: flex;
+}
+
+.right p{
+    margin-inline: 22px;
+    font-size: 18px;
+    margin-top: 17px;
+}
+.right button{
+    margin-inline: 22px;
+    width: 80px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(244, 69, 98);
+    color: #fff;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.right i{
+    margin-inline: 22px;
+    font-size: 22px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-.menu a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-    position: relative;
-    text-align: center;
+.sec-nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 9px;
+    background-color: rgb(26, 26, 48);
+    color: #fff;
 }
-.menu a:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    border-bottom: 2px solid indianred;
-    transition: 0.4s linear;
-}
-.menu a:hover::before{
-    width: 90%;
-}
-.register a{
-   text-decoration: none;
-   color: white;
-   padding: 10px 20px;
-   font-size: 20px;
-   background:indianred;
-   border-radius: 10px;
-   transition: 0.8px;
-}
-.register a:hover{
-    background: transparent;
-    border: 2px solid indianred;
-}
-.head{
-    max-width: 650%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
-}
-.head span{
-    letter-spacing: 5px;
-}
-.head h1{
-    font-size: 3.5em;
-}
-.head a{
-    text-decoration: none;
-    background-color:indianred;
-    color:white;
-    padding: 10px 20px;
-    letter-spacing: 5px;
-    border-radius: 10px;
 
+.sec-nav p:hover{
+    color: rgb(244, 69, 98);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sec-nav .s-right{
+    display: flex;
+}
+
+.sec-nav .s-left{
+    display: flex;
+}
+.s-left p{
+    margin-inline-start: 22px;
+}
+.s-right p{
+    margin-inline-start: 22px;
+}
+
+.main img{
+    width: 100%;
+}
+
+.container h2{
+    text-align: center;
+    padding: 22px;
+}
+.container .card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.card img{
+    width: 17%;
+    margin-block: 15px;
+    border-radius: 5px;
+}
+.banner img{
+    width: 100%;
+    margin-top: 44px;
+}
+
+.premiere{
+    background-color: rgb(8, 8, 19);
+    color: #fff;
+    margin-top: 44px;
+
+}
+.container .card{
+    margin-top: 11px;
+    cursor: pointer;
+}
+.footer{
+    background-color: rgb(50, 50, 69);
+    padding: 33px;
+    margin-top: 50px;
+}
+
+.footer img{
+    width: 16%;
+    margin-left: 39%;
+    cursor: pointer;
+    margin-left: 42%;
+}
+
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+.icon i{
+    margin-inline: 22px;
+    font-size: 25px;
+    font-size: 26px;
+    justify-content: center;
+}
+
+.icon i:hover{
+color: rgb(223, 60, 60);
 }

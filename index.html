@@ -4,21 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO-LIST</title>
-    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="todo.css">
+    <title>Clone a Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ee9ed7907.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>To-Do-List App</h1>
-        <div class="inputs">
-            <input type="text" placeholder="Enter Your Task" id="inp">
-            <button onclick="Add()">Add</button>
+    <nav class="fnav">
+        <div class="left">
+            <img src="pics/logoes.png" alt="">
+            <input type="text" placeholder="Search For Movies , Events , Plays And More  ">
         </div>
-        <div class="text"></div>
+        <div class="right">
+            <p>Location</p>
+            <button>Sign In</button>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <nav class="sec-nav">
+        <div class="s-left">
+            <p>Movies</p>
+            <p>Stream</p>
+            <p>Events</p>
+            <p>Plays</p>
+            <p>Sports</p>
+            <p>Activaties</p>
+            <p>Buzz</p>
+        </div>
+
+        <div class="s-right">
+            <p>ListYourShow</p>
+            <p>Corporates</p>
+            <p>Offer</p>
+            <p>GiftCard</p>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="pics/ban.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="pics/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="pics/banner3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="pics/banner4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="pics/banner5.jpg" alt=""></div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-    <script src="todo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- javascript -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            autoplay: {
+                delay: 3000,
+                disableonInteraction: false,
+            },
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+    <div class="container">
+        <h2>Recommended Movies</h2>
+        <div class="card">
+            <img src="pics/pic1.jpg" alt="">
+            <img src="pics/marathi.jpg" alt="">
+            <img src="pics/tomcruse.jpg" alt="">
+            <img src="pics/barbie.jpg" alt="">
+            <img src="pics/oppen.jfif" alt="">
+        </div>
+
+        <div class="banner">
+            <img src="pics/banner.jpg" alt="">
+        </div>
+        <div class="container">
+            <h2>Best Of Live Events</h2>
+            <div class="card">
+                <img src="pics/c1.jpg" alt="">
+                <img src="pics/c2.jpg" alt="">
+                <img src="pics/c3.jpg" alt="">
+                <img src="pics/c4.jpg" alt="">
+                <img src="pics/c5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Events Happening Near You</h2>
+            <div class="card">
+                <img src="pics/download (1).jpg" alt="">
+                <img src="pics/download (2).jpg" alt="">
+                <img src="pics/download (3).jpg" alt="">
+                <img src="pics/download (4).jpg" alt="">
+                <img src="pics/download.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Online Streaming Events</h2>
+            <div class="card">
+                <img src="pics/d1.jpg" alt="">
+                <img src="pics/d2.jpg" alt="">
+                <img src="pics/d3.jpg" alt="">
+                <img src="pics/d4.jpg" alt="">
+                <img src="pics/d5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="premiere">
+            <h2>PREMIERE</h2>
+            <div class="container">
+                <h2>Premieres</h2>
+                <div class="card">
+                    <img src="pics/p1.jpg" alt="">
+                    <img src="pics/p2.jpg" alt="">
+                    <img src="pics/p3.jpg" alt="">
+                    <img src="pics/p5.jpg" alt="">
+                    <img src="pics/p6.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <img src="pics/logoes.png" alt="file:///C:/Users/manoj/Desktop/Task-3/index.html">
+                <hr>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <p style="text-align:center ; margin-top: 20px;">Copyrights 2023@Bigtree Entertainment Pvt. Ltd. All
+                    Rights Reserved</p>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
